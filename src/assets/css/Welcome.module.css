@@ -1,0 +1,69 @@
+.welcome {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.welcome .container .left {
+    font-family: var(--ubuntu);
+    flex: 1;
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10rem;
+}
+
+.welcome .container .left .top h2 {
+    color: var(--deep-blue);
+    font-size: var(--font-heading3);
+}
+
+.welcome .container .left .bottom {
+    /* border: 1px solid red; */
+    width: 70%;
+}
+
+.welcome .container .left .bottom button {
+    width: 100%;
+    background-color: var(--deep-blue);
+    margin: 1rem 0rem;
+    font-size: var(--font-para3);
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.welcome .container .left .bottom p a {
+    color: var(--deep-blue);
+    text-decoration: underline;
+}
+
+.welcome .container .right {
+    flex: 1;
+    width: 50%;
+    min-height: 100vh;
+    background-color: var(--light-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome .container .right .wrapper {
+    flex: 0 0 90%;
+}
+
+.welcome .container .right .wrapper img {
+    width: 100%;
+    height: auto;
+}

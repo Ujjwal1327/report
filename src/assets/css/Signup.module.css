@@ -1,0 +1,109 @@
+.signup {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup .container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: center;
+}
+
+.signup .container .left {
+    font-family: var(--ubuntu);
+    flex: 1;
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10rem;
+    gap: 2rem;
+}
+
+.signup .container .left .top h2 {
+    color: var(--deep-blue);
+    font-size: var(--font-heading3);
+}
+
+.signup .container .left form {
+    width: 80%;
+}
+
+.signup .container form>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 2.5rem;
+}
+
+
+
+.signup .container form>div label {
+    font-size: var(--font-para3);
+    font-weight: bold;
+}
+
+.signup .container form>div input {
+    width: 100%;
+    border: none;
+    background-color: rgb(227, 227, 227);
+    font-size: var(--font-para3);
+    outline: none;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    color: var(--deep-blue);
+}
+
+.signup .container form .password {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.signup .container form button {
+    width: 100%;
+    background-color: var(--deep-blue);
+    /* margin: 1rem 0rem; */
+    margin-top: 2rem;
+    font-size: var(--font-para3);
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.signup .container form p {
+
+    font-size: var(--font-para4);
+    color: red;
+    width: fit-content;
+}
+
+/* *********************************************************** */
+/* right side  */
+/* *********************************************************** */
+.signup .container .right {
+    flex: 1;
+    width: 50%;
+    min-height: 100vh;
+    background-color: var(--light-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup .container .right .wrapper {
+    flex: 0 0 90%;
+}
+
+.signup .container .right .wrapper img {
+    width: 100%;
+    height: auto;
+}

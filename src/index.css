@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+  /* font-size  */
+  /*
+    Syntax: clamp(minimum_value, preferred_value, maximum_value)
+    - minimum_value: The smallest size the font will be.
+    - preferred_value: A value relative to the viewport width (e.g., 5vw for 5% of viewport width).
+    - maximum_value: The largest size the font will be.
+  */
+  --font-heading1: clamp(2.5rem, 4.5vw, 5.5rem);
+  /* Scales from 35px to 70px, with 6vw in between */
+  --font-heading2: clamp(2.5rem, 4.5vw, 5rem);
+  --font-heading3: clamp(1.8rem, 3vw, 3.5rem);
+  --font-para1: clamp(1.8rem, 2.5vw, 2.2rem);
+  --font-para2: clamp(1.4rem, 2vw, 1.8rem);
+  --font-para3: clamp(1.3rem, 1.5vw, 1.4rem);
+  --font-para4: clamp(1rem, 1.2vw, 1.1rem);
+  /* font-color  */
+  --header-color: #1c1f35;
+  --sub-header-color: #454545;
+  --deep-orange: #f86b21;
+  --light-blue: #F2F7FA;
+  --deep-blue: #4280EF;
+  --orange-gradient: linear-gradient(to bottom right, #F86C21, #FF921E);
+  /* font family  */
+  --ubuntu: "Ubuntu", sans-serif;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* Box Model Fix (Universal Box-Sizing) */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Inherit Basic Styles */
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+  line-height: 1.2;
+  color: #333;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+
+}
+
+/* Set default font style for block elements */
+
+/* Reset list styles */
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Remove default link styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Ensure tables have borders */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 0.5em;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+/* Set up default form input styling */
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 0.5em;
+  margin: 0.25em 0;
+  line-height: 1.5;
+}
+
+/* Add basic styling for images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p {
+  font-weight: 500;
+}
+
+/* Reset default block and inline elements' spacing */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* Fix for inline-block issues */
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Global HTML Styling */
+html,
+body {
+  height: 100%;
+}
+
+/* Prevent unwanted overflow */
+body {
+  overflow-x: hidden;
+}
+
+p{
+      color: var(--sub-header-color);
+    font-size: var(--font-para3);
+}
+
+
+/* ************************************************************* */
+/* Extra common classes */
+/* ************************************************************* */

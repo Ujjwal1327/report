@@ -1,0 +1,116 @@
+.verifyEmail {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.verifyEmail .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.verifyEmail .container .left {
+    font-family: var(--ubuntu);
+    flex: 1;
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10rem;
+    gap: 10rem;
+}
+
+.verifyEmail .container .left .top h2 {
+    color: var(--deep-blue);
+    font-size: var(--font-heading3);
+}
+
+.verifyEmail .container form div label {
+    font-size: var(--font-para3);
+    font-weight: bold;
+}
+
+.verifyEmail .container form {
+    width: 80%;
+}
+
+.verifyEmail .container form div {
+    margin-bottom: 1rem;
+}
+
+
+
+.verifyEmail .container form p::after {
+    position: absolute;
+    left: -60%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 1px;
+    background-color: var(--sub-header-color);
+    content: "";
+}
+.verifyEmail .container form p::before {
+    position: absolute;
+    right: -60%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 1px;
+    background-color: var(--sub-header-color);
+    content: "";
+}
+
+
+
+.verifyEmail .container form div input {
+    width: 100%;
+    border: none;
+    background-color: rgb(227, 227, 227);
+    font-size: var(--font-para3);
+    outline: none;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    color: var(--deep-blue);
+}
+.verifyEmail .container form button {
+    width: 100%;
+    background-color: var(--deep-blue);
+    /* margin: 1rem 0rem; */
+    margin: 2rem 0rem;
+
+    font-size: var(--font-para3);
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+.verifyEmail .container form .otp {
+    background-color: rgb(2, 238, 2);
+    margin-bottom: 5rem;
+    color: white;
+}
+
+
+.verifyEmail .container .right {
+    flex: 1;
+    width: 50%;
+    min-height: 100vh;
+    background-color: var(--light-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.verifyEmail .container .right .wrapper {
+    flex: 0 0 90%;
+}
+
+.verifyEmail .container .right .wrapper img {
+    width: 100%;
+    height: auto;
+}

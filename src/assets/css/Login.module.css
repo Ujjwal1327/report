@@ -1,0 +1,104 @@
+.login {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.login .container .left {
+    font-family: var(--ubuntu);
+    flex: 1;
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10rem;
+    gap: 10rem;
+}
+
+.login .container .left .top h2 {
+    color: var(--deep-blue);
+    font-size: var(--font-heading3);
+}
+
+.login .container .left form {
+    width: 80%;
+}
+
+.login .container form>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+}
+
+.login .container form>div .label {
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login .container form>div .label a {
+font-size: var(--font-para3);
+    color: var(--deep-orange);
+}
+
+
+
+.login .container form div label {
+    font-size: var(--font-para3);
+    font-weight: bold;
+}
+
+.login .container form div input {
+    width: 100%;
+    border: none;
+    background-color: rgb(227, 227, 227);
+    font-size: var(--font-para3);
+    outline: none;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    color: var(--deep-blue);
+}
+
+.login .container form button {
+    width: 100%;
+    background-color: var(--deep-blue);
+    /* margin: 1rem 0rem; */
+    margin-top: 2rem;
+    font-size: var(--font-para3);
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.login .container .right {
+    flex: 1;
+    width: 50%;
+    min-height: 100vh;
+    background-color: var(--light-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .container .right .wrapper {
+    flex: 0 0 90%;
+}
+
+.login .container .right .wrapper img {
+    width: 100%;
+    height: auto;
+}
