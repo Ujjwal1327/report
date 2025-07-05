@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import s from '../assets/css/Signup.module.css'
 import { useContext, useState } from 'react'
 
-import { createUserWithEmailAndPassword, sendEmailVerification } from '@firebase/auth'
+import { createUserWithEmailAndPassword } from '@firebase/auth'
 import { auth, db } from '../firebase.js'
 import { doc, setDoc } from 'firebase/firestore'
 import UserContext from '../context/UserContext.jsx'
@@ -42,19 +42,7 @@ const Signup = () => {
         uid: user.uid,
         emailVerified: false,
       });
-      const actionCodeSettings = {
-        url: 'http://localhost:5173/login', // <-- your custom page
-        handleCodeInApp: false, // false = Firebase handles link click & redirects
-      };
-      // ✅ Step 3: Send email verification link to the newly created user
-      sendEmailVerification(user, actionCodeSettings)
-        .then(() => {
-          console.log("Verification email sent");
-        })
-        .catch((error) => {
-          console.error("Error sending email verification:", error);
-        });
-      // ✅ Step 4: Redirect to verify-email page
+
       navigate('/verify-email');
       setLoading(false);
     } catch (err) {

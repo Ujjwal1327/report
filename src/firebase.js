@@ -4,12 +4,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA7--P_cxdHyV36502BONHG9FFF5XwKQ9A",
-  authDomain: "report-1a0d0.firebaseapp.com",
-  projectId: "report-1a0d0",
-  storageBucket: "report-1a0d0.firebasestorage.app",
-  messagingSenderId: "536149246533",
-  appId: "1:536149246533:web:9ebf98948acfc4eec5592c"
+  apiKey: "AIzaSyBbNZX7MWInhfSyCGK427ftxTBX7CEIeR8",
+  authDomain: "patna-library.firebaseapp.com",
+  projectId: "patna-library",
+  storageBucket: "patna-library.firebasestorage.app",
+  messagingSenderId: "613155834355",
+  appId: "1:613155834355:web:6746738e632c3339b86a86",
+  measurementId: "G-VGV4592DDJ"
 };
 
 const app = initializeApp(firebaseConfig);

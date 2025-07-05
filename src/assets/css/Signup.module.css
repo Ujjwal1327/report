@@ -29,6 +29,10 @@
     color: var(--deep-blue);
     font-size: var(--font-heading3);
 }
+.signup .container .left .top p a {
+    color: var(--deep-blue);
+    text-decoration: underline;
+}
 
 .signup .container .left form {
     width: 80%;
