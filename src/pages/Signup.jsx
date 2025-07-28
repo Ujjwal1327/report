@@ -33,14 +33,12 @@ const Signup = () => {
         email,
         number,
         createdAt: new Date(),
-        emailVerified: false
       });
       setUserData({
         name,
         email,
         number,
         uid: user.uid,
-        emailVerified: false,
       });
 
       navigate('/verify-email');

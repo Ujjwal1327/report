@@ -1,0 +1,10 @@
+.dashboard {
+    border: 1px solid red;
+    min-height: 100vh;
+}
+
+.dashboard .sidebar {
+    background-color: rgb(227, 227, 227);
+    width: 20%;
+    min-height: 100vh;
+}

@@ -149,12 +149,23 @@ body {
   overflow-x: hidden;
 }
 
-p{
-      color: var(--sub-header-color);
-    font-size: var(--font-para3);
+p {
+  color: var(--sub-header-color);
+  font-size: var(--font-para3);
 }
 
 
 /* ************************************************************* */
 /* Extra common classes */
 /* ************************************************************* */
+
+/* Spinner.css */
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -7,6 +7,8 @@ import ForgotPassword from "./pages/ForgotPassword"
 import VerifyEmail from "./pages/VerifyEmail"
 import VerifyNumber from "./pages/VerifyNumber"
 import CreatePassword from "./pages/CreatePasword"
+import ProtectedRoute from "./components/ProtectedRoute"
+import Dashboard from "./pages/Dashboard"
 const App = () => {
   return (
     <Routes>
@@ -17,6 +19,19 @@ const App = () => {
       <Route path="/verify-email" element={<VerifyEmail />} />
       <Route path="/verify-number" element={<VerifyNumber />} />
       <Route path="/create-password" element={<CreatePassword />} />
+
+      {/* ✅ Protected dashboard route */}
+      <Route
+        path="/dashboard"
+        element={
+          <ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>
+        }
+      />
+
+
+
     </Routes>
   )
 }

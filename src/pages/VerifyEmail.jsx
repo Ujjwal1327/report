@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import s from '../assets/css/verifyEmail.module.css';
 import UserContext from '../context/UserContext';
 import { auth, db } from '../firebase';
@@ -6,6 +6,7 @@ import { sendEmailVerification, updateEmail } from 'firebase/auth';
 import { doc, updateDoc } from 'firebase/firestore';
 
 const VerifyEmail = () => {
+    const [error, setError] = useState("");
     const { userData, setUserData } = useContext(UserContext);
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -32,10 +33,9 @@ const VerifyEmail = () => {
                 url: 'http://localhost:5173/login', // ✅ update to your actual domain
                 handleCodeInApp: false
             });
-            alert("Verification email sent. Please check your inbox.");
+            setError("Verification email sent. Please check your inbox.");
         } catch (error) {
-            console.error("Error during email verification process:", error.message);
-            alert("Something went wrong: " + error.message);
+            setError("Something went wrong: " + error.message);
         }
 
     };
@@ -57,6 +57,9 @@ const VerifyEmail = () => {
                             />
                         </div>
                         <button type="submit">Verify</button>
+                        {
+                            error && <p>{error}</p>
+                        }
                     </form>
                 </div>
                 <div className={s.right}>
